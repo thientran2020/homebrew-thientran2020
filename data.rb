@@ -5,11 +5,11 @@
 class Data < Formula
   desc ""
   homepage "https://github.com/thientran2020/data"
-  version "1.1.0"
+  version "1.2.3"
 
   on_macos do
-    url "https://github.com/thientran2020/data/releases/download/v1.1.0/data_1.1.0_darwin_all.tar.gz"
-    sha256 "83274fcd9eecb09b5218e614d42bf01ef730a042801639366e919b2597f2f400"
+    url "https://github.com/thientran2020/data/releases/download/v1.1.0/data_1.2.3_darwin_all.tar.gz"
+    sha256 "a51772c112fa3128fd4affe05573fe7cc1d4d2c0c806c657e0a1bd216412d871"
 
     def install
       bin.install "data"
@@ -18,16 +18,16 @@ class Data < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/thientran2020/data/releases/download/v1.1.0/data_1.1.0_linux_amd64.tar.gz"
-      sha256 "0a1c23029228666f3307740c533aef25cef30104205ab838d1da711640bc948f"
+      url "https://github.com/thientran2020/data/releases/download/v1.1.0/data_1.2.3_linux_amd64.tar.gz"
+      sha256 "f1eae248504aa6f4419a77ef4326ade84e55d80eeaba79b5c33bbd4c9ed7e123"
 
       def install
         bin.install "data"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/thientran2020/data/releases/download/v1.1.0/data_1.1.0_linux_arm64.tar.gz"
-      sha256 "e46fc25bf5c41426c0cdff8b726d08c08ae4cca56a97073fb7f9b555c4296c0f"
+      url "https://github.com/thientran2020/data/releases/download/v1.1.0/data_1.2.3_linux_arm64.tar.gz"
+      sha256 "c15df65b29b8ab9680657e8573d5233c001d9c8d4938f7aed90d8ea68690a2bf"
 
       def install
         bin.install "data"
